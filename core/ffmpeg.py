@@ -23,7 +23,7 @@ from typing import Tuple
 from humanfriendly import format_timespan
 from core.display_progress import TimeFormatter
 from pyrogram.errors.exceptions.flood_420 import FloodWait
-
+import ffmpeg
 
 async def vidmark(the_media, message, working_dir, watermark_path, output_vid, total_time, logs_msg, status, mode, position, size):
     file_genertor_command = [
